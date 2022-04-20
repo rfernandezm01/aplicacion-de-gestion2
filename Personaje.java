@@ -17,8 +17,22 @@ public class Personaje {
     private String nomconstelacion;
     private String rango;
     private int nvlper;
+    private Elemento elemento;
 
-    public Personaje(){
+    public Personaje(int perID, String nombre, int edad, Armas armas, String rol, String genero, String nomconstelacion, String rango, int nvlper, Elemento elemento){
+        this.perID = perID;
+        this.nombre = nombre;
+        this.edad = edad;
+        this.armas = armas;
+        this.rol = rol;
+        this.genero = genero;
+        this.nomconstelacion = nomconstelacion;
+        this.rango = rango;
+        this.nvlper = nvlper;
+        this.elemento = elemento;
+    }
+    public String toString(){
 
+        return toString();
     }
 }
