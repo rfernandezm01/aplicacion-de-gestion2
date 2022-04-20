@@ -32,8 +32,7 @@ public class Terminal {
         return menu();
     }
     public Region emplenarRegion(){
-
-
+        Region region = new Region();
         return emplenarRegion();
     }
 }
