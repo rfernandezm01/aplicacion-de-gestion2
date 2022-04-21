@@ -19,6 +19,8 @@ public class Personaje {
     private int nvlper;
     private Elemento elemento;
 
+    private boolean region;
+
     public Personaje(int perID, String nombre, int edad, Armas armas, String rol, String genero, String nomconstelacion, String rango, int nvlper, Elemento elemento){
         this.perID = perID;
         this.nombre = nombre;
@@ -30,6 +32,21 @@ public class Personaje {
         this.rango = rango;
         this.nvlper = nvlper;
         this.elemento = elemento;
+    }
+
+    public Armas comprobararmas(){
+        if(this.armas == Armas.arco || this.armas == Armas.espada || this.armas == Armas.lanza || this.armas == Armas.claymore || this.armas == Armas.catalizador){
+            this.armas = this.armas;
+        }else{
+            this.armas = Armas.espada;
+        }
+        return comprobararmas();
+    }
+    public Armas getArmas(){
+        return armas;
+    }
+    public boolean getregion(){
+        return region;
     }
     public String toString(){
 
